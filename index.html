@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+
+<html lang="">
+<head>
+<title>FroshBuddy</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+    <link href="grid.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;
+    height: 500px;
+    }
+    .mySlide {display:none;
+    height: 500px;
+    }
+</style>
+</head>
+<body id="top">
+
+<div class="wrapper row0">
+  <div id="topbar" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div class="fl_left">
+      <ul>
+        <li><i class="fa fa-phone"></i> ***************</li>
+        <li><i class="fa fa-envelope-o"></i>froshbuddy@gmail.com</li>
+      </ul>
+    </div>
+    <div class="fl_right">
+      <ul>
+        <li><a href="#"><i class="fa fa-lg fa-home"></i></a></li>
+        <li><button class="open-button" onclick="openForm()">Login</button></li>
+          <div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container" style="margin: 20px;">
+    <h1>Login</h1>
+      <br>
+    <label for="email"><h3>Email</h3></label><br>
+    <input type="text" style="font-size: 16pt; height: 30px;"placeholder="Enter Email" name="email" required><br>
+
+    <label for="psw"><h3>Password</h3></label><br>
+    <input type="password" style="font-size: 16pt; height: 30px;"placeholder="Enter Password" name="psw" required><br>
+
+    <button type="submit" class="btn"><h3>Login</h3></button><br><br>
+    <button type="button" class="btn cancel" onclick="closeForm()"><h3>Close</h3></button>
+  </form>
+</div>
+        <li><button class="open-button" onclick="opRegForm()">Register</button></li>
+           <div class="form-popup" id="RegForm">
+  <form action="/action_page.php" class="form-container" style="margin: 20px;">
+    <h1>Register</h1>
+      <br>
+    <label for="email"><h3>Email</h3></label><br>
+    <input type="text" style="font-size: 16pt; height: 30px;"placeholder="Enter Email" name="email" required><br>
+
+    <label for="psw"><h3>Password</h3></label><br>
+    <input type="password" style="font-size: 16pt; height: 30px;"placeholder="Enter Password" name="psw" required><br>
+
+    <button type="submit" class="btn"><h3>Register</h3></button><br><br>
+    <button type="button" class="btn cancel" onclick="closeRegForm()"><h3>Close</h3></button>
+  </form>
+</div>
+         
+      </ul>
+    </div>
+    <!-- ################################################################################################ --> 
+  </div>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+  <header id="header" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div id="logo">
+      <h1><a href="index.html"><center><b>Frosh Buddy</b></center></a></h1>
+    </div>
+    
+    <!-- ################################################################################################ --> 
+  </header>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper row2">
+  <nav id="mainav" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <ul class="clear">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li><a href="https://goo.gl/forms/Mt54IkjPcaB4SnTr1">Take Quiz</a></li>
+      <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTKGOJB7ZPa72ek5cwyy4Z_iG_0404Cqv2GG95qyq238kiN0OPiO3ckvZ8kRhnAIsghC3AaLUafriWQ/pubhtml?gid=0&single=true">Leaderboard</a></li>
+      <!---<li><a href="#">Link Text</a></li>-->
+      <li><a href="https://docs.google.com/presentation/d/e/2PACX-1vRE1UDoPFYepUqoxDdG8eeckLfJ_8ei5JYKuDR8qRNQfIqru26zXSfp1b96AK_rMEEh_pKpj53eSmPy/pub?start=true&loop=true&delayms=3000">Headlines</a></li>
+    </ul>
+    <!-- ################################################################################################ --> 
+  </nav>
+</div>
+<!-- ################################################################################################ --> 
+<!-- #############################################################background-image:url('images/demo/backgrounds/01.png');################################### --> 
+<!-- ################################################################################################ -->
+<div class="wrapper bgded overlay" style="background-color: #555;">
+  <article id="pageintro" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <h3 class="heading">“Success is a journey, not a destination"</h3>
+    <p>“Success means doing the best we can with what we have. Success is the doing, not the getting in the trying, not the triumph. Success is a personal standard, reaching for the highest that is in us, becoming all that we can be.”</p>
+    <!--<footer><a class="btn" href="#">Tellus et egestas</a></footer>-->
+    <!-- ################################################################################################ --> 
+  </article>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body --> 
+    <!-- ################################################################################################ -->
+   
+      <div class="w3-content w3-display-container">
+  <img class="mySlides" src="images/demo/part1/what.jpg" style="width:100%">
+  <img class="mySlides" src="images/demo/part1/what1.jpg" style="width:100%">
+  <img class="mySlides" src="images/demo/part1/what2.jpg" style="width:100%">
+  <img class="mySlides" src="images/demo/part1/what3.jpg" style="width:100%">
+    <img class="mySlides" src="images/demo/part1/what4.jpg" style="width:100%">
+  <img class="mySlides" src="images/demo/part1/what5.jpg" style="width:100%">
+  <img class="mySlides" src="images/demo/part1/what6.jpg" style="width:100%">
+
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+      
+      <!--<ul class="nospace group">
+      <li class="one_third first">
+        <article><i class="btmspace-30 fa fa-3x fa-american-sign-language-interpreting"></i>
+          <h6 class="heading font-x1">Lacinia est libero</h6>
+          <p class="btmspace-30">Volutpat tellus id consectetur elit risus at augue aliquam eu efficitur quam aliquam nulla magna malesuada quis [&hellip;]</p>
+          <footer><a class="btn" href="#">Read More &rsaquo;</a></footer>
+        </article>
+      </li>
+      <li class="one_third">
+        <article><i class="btmspace-30 fa fa-3x fa-resistance"></i>
+          <h6 class="heading font-x1">Pulvinar vel condimentum</h6>
+          <p class="btmspace-30">Ac purus donec lorem risus porta at tortor non hendrerit commodo ante duis venenatis ut elit id fermentum [&hellip;]</p>
+          <footer><a class="btn" href="#">Read More &rsaquo;</a></footer>
+        </article>
+      </li>
+      <li class="one_third">
+        <article><i class="btmspace-30 fa fa-3x fa-expeditedssl"></i>
+          <h6 class="heading font-x1">Phasellus vestibulum auctor</h6>
+          <p class="btmspace-30">Neque ut facilisis dolor interdum quis morbi ac enim eget nisi tristique facilisis aliquam tempus condimentum eros [&hellip;]</p>
+          <footer><a class="btn" href="#">Read More &rsaquo;</a></footer>
+        </article>
+      </li>
+    </ul>
+    <!-- ################################################################################################ --> 
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- ###########################################background-image:url('images/demo/backgrounds/02.png');##################################################### --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper bgded overlay" style="background-color: #555;">
+  <section class="hoc container clear"> 
+    <!-- ################################################################################################ -->
+    <div class="sectiontitle">
+      <h6 class="heading">Headlines</h6>
+    </div>
+    <div class="group">
+      <div class="one_half first">
+        <p><strong>Important Points</strong></p>
+        <ul>
+            <li>Rgpv Exam date for 8th semester student is out on the portal</li>
+            <li>GATE-2019 Result is announce on 15th March</li>
+            <li>Every Student of Ies Group Institution has to report on 18 March for the Major Project Presentation..</li>
+</ul>  
+        <footer><a class="btn" href="https://docs.google.com/presentation/d/e/2PACX-1vRE1UDoPFYepUqoxDdG8eeckLfJ_8ei5JYKuDR8qRNQfIqru26zXSfp1b96AK_rMEEh_pKpj53eSmPy/pub?start=true&loop=true&delayms=3000">Read More &raquo;</a></footer>
+      </div>
+      <div class="one_half">
+        <p><strong>Today's Important Headlines....</strong></p>
+        <video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+          <p><strong>Note:</strong>Keep the notes for the future exams.... </p>
+      </div>
+    </div>
+    <!-- ################################################################################################ --> 
+  </section>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- ################################################################################################ -->
+    <!--<div class="sectiontitle">
+      <h6 class="heading">Velit fringilla tincidunt</h6>
+    </div>-->
+       <div class="w3-content w3-display-container">
+        <img class="mySlide" src="images/demo/pic2/sol.jpg" style="width:100%">
+           <img class="mySlide" src="images/demo/pic2/sol1.jpg" style="width:100%">
+           <img class="mySlide" src="images/demo/pic2/sol2.jpg" style="width:100%">
+           <img class="mySlide" src="images/demo/pic2/sol3.jpg" style="width:100%">
+           <img class="mySlide" src="images/demo/pic2/sol4.jpg" style="width:100%">
+           <img class="mySlide" src="images/demo/pic2/sol5.jpg" style="width:100%">
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+    <!--<div class="group testimonials">
+      <article class="one_half first"><img src="images/demo/100x100.png" alt="">
+        <blockquote>Lectus quam posuere elit quis risus sem vitae augue morbi rhoncus accumsan porttitor nullam et blandit est ac maximus elit praesent ornare dapibus nibh sed condimentum.</blockquote>
+        <h6 class="heading">A. Name</h6>
+        <em>Fringilla tortor tempor</em></article>
+      <article class="one_half"><img src="images/demo/100x100.png" alt="">
+        <blockquote>Mattis sem enim hendrerit enim sed egestas odio risus pretium orci nullam sodales ornare turpis ut vestibulum felis pharetra ultrices maecenas aliquam tortor tortor non.</blockquote>
+        <h6 class="heading">B. Name</h6>
+        <em>Vel etiam augue mi dictum</em></article>
+    </div>-->
+    <!-- ################################################################################################ --> 
+  <div class="clear"></div>
+  </main>
+</div>
+<!-- ####################################background-image:url('images/demo/backgrounds/03.png');############################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper bgded overlay" style="background-color: #555; height: 600px;">
+  <section class="hoc container clear"> 
+    <!-- ################################################################################################ -->
+    <div class="sectiontitle">
+      <h6 class="heading">Creaters</h6>
+    </div>
+    <div class="group team">
+      <figure class="one_quarter first" style="border-radius: 50%; width:200px; height:200px"><a href="#"><img src="images/demo/1123.gif" alt="" ></a>
+        <figcaption>
+          <h6 class="heading">Abhishek Kumar Singh</h6>
+          <em>Android Developer</em>
+          <footer>
+            <ul class="faico clear">
+              <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
+            </ul>
+          </footer>
+        </figcaption>
+      </figure>
+      <figure class="one_quarter" style="border-radius: 50%; width:200px; height:200px"><a href="#"><img src="images/demo/1124.gif" alt=""></a>
+        <figcaption>
+          <h6 class="heading">Anshika Sharma</h6>
+          <em>Designer</em>
+          <footer>
+            <ul class="faico clear">
+              <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
+            </ul>
+          </footer>
+        </figcaption>
+      </figure>
+      <figure class="one_quarter"style="border-radius: 8px; width:200px; height:200px"><a href="#"><img src="images/demo/1125.gif" alt=""></a>
+        <figcaption>
+          <h6 class="heading">Anjani Kumar</h6>
+          <em>Database Developer</em>
+          <footer>
+            <ul class="faico clear">
+              <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
+            </ul>
+          </footer>
+        </figcaption>
+      </figure>
+      <figure class="one_quarter"style="border-radius: 50%; width:200px; height:200px"><a href="#"><img src="images/demo/1126.gif" alt="" ></a>
+        <figcaption>
+          <h6 class="heading">Md. Sabdar Ansari</h6>
+          <em>Content Writer</em>
+          <footer>
+            <ul class="faico clear">
+              <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
+            </ul>
+          </footer>
+        </figcaption>
+      </figure>
+    </div>
+    <!-- ################################################################################################ -->
+    <div class="clear"></div>
+  </section>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<!--<div class="wrapper row3">
+  <figure class="hoc clear"> 
+    <!-- ################################################################################################ -->
+  <!--  <ul class="nospace group logos">
+      <li class="one_quarter first"><a href="#"><img src="images/demo/222x100.png" alt=""></a></li>
+      <li class="one_quarter"><a href="#"><img src="images/demo/222x100.png" alt=""></a></li>
+      <li class="one_quarter"><a href="#"><img src="images/demo/222x100.png" alt=""></a></li>
+      <li class="one_quarter"><a href="#"><img src="images/demo/222x100.png" alt=""></a></li>
+    </ul>-->
+    <!-- ################################################################################################ --> 
+ <!-- </figure>
+</div>-->
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<!--<div class="wrapper row4">
+  <footer id="footer" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+  <!--  <div class="one_quarter first">
+      <h6 class="heading">Venenatis iaculis</h6>
+      <p>Consequat lectus in tristique nisl nullam eleifend leo nunc non posuere nisi vehicula eget.</p>
+      <p>Sed placerat aliquet ligula cras tortor nisl semper et feugiat rhoncus pretium nec est morbi id odio sollicitudin.</p>
+    </div>
+    <div class="one_quarter">
+      <h6 class="heading">Nullam sit amet</h6>
+      <nav>
+        <ul class="nospace">
+          <li><a href="index.html"><i class="fa fa-lg fa-home"></i></a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Cookies</a></li>
+          <li><a href="#">Disclaimer</a></li>
+        </ul>
+      </nav>
+      <ul class="faico clear">
+        <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a class="faicon-dribble" href="#"><i class="fa fa-dribbble"></i></a></li>
+        <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+        <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+        <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
+      </ul>
+    </div>
+    <div class="one_quarter">
+      <h6 class="heading">Tincidunt velit</h6>
+      <article>
+        <h2 class="nospace font-x1"><a href="#">Vestibulum orci nisi</a></h2>
+        <time class="font-xs" datetime="2045-04-06">Friday, 6<sup>th</sup> April 2045</time>
+        <p>Vestibulum turpis vel scelerisque sem duis justo enim condimentum iaculis urna bibendum imperdiet convallis quisque elementum [&hellip;]</p>
+      </article>
+    </div>
+    <div class="one_quarter">
+      <h6 class="heading">Enim diam praesent</h6>
+      <ul class="nospace linklist">
+        <li><a href="#">Ante magna congue vel justo</a></li>
+        <li><a href="#">Egestas est aliquam sed</a></li>
+        <li><a href="#">Ex condimentum interdum</a></li>
+        <li><a href="#">Faucibus velit consequat</a></li>
+      </ul>
+    </div>-->
+    <!-- ################################################################################################ --> 
+ <!-- </footer>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <center><p>Copyright &copy; All Rights Reserved - <a href="#">froshbuddy.com</a></p></center>
+    <!-- ################################################################################################ --> 
+  </div>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a> 
+<!-- JAVASCRIPTS --> 
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlide");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+<script src="scr.js"></script>
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="layout/scripts/jquery.backtotop.js"></script>
+<script src="layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>
